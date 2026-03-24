@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+  <title>SchemeFinder India - Find Government Schemes For You</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <span class="logo-text">Scheme<span class="logo-highlight">Finder</span> India</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-en="Home" data-hi="होम">Home</a></li>
+        <li><a href="#form-section" class="nav-link" data-en="Find Schemes" data-hi="योजनाएं खोजें">Find Schemes</a></li>
+        <li><a href="#faq-section" class="nav-link" data-en="FAQ" data-hi="सामान्य प्रश्न">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" title="Switch to Hindi">
+          <span class="lang-label">हिं</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://mgx-backend-cdn.metadl.com/generate/images/751097/2026-03-24/b986941d-38d8-4b90-8758-7612c7bdd2ac.png" alt="Digital India" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-flag"></i>
+        <span data-en="Government of India Schemes" data-hi="भारत सरकार की योजनाएं">Government of India Schemes</span>
+      </div>
+      <h1 class="hero-title" data-en="Find Government Schemes For You" data-hi="अपने लिए सरकारी योजनाएं खोजें">
+        Find Government Schemes <br><span class="highlight-text">For You</span>
+      </h1>
+      <p class="hero-subtitle" data-en="Discover the best central and state government schemes based on your profile. Simple, fast, and free." data-hi="अपनी प्रोफ़ाइल के आधार पर सर्वोत्तम केंद्र और राज्य सरकार की योजनाएं खोजें। सरल, तेज़ और मुफ़्त।">
+        Discover the best central and state government schemes based on your profile. Simple, fast, and free.
+      </p>
+      <p class="hero-subtitle-hi" data-en="" data-hi="">
+        अपनी प्रोफ़ाइल के आधार पर सर्वोत्तम सरकारी योजनाएं खोजें। सरल, तेज़ और मुफ़्त।
+      </p>
+      <div class="hero-buttons">
+        <a href="#form-section" class="btn btn-primary btn-lg">
+          <i class="fas fa-search"></i>
+          <span data-en="Find Schemes Now" data-hi="अभी योजनाएं खोजें">Find Schemes Now</span>
+        </a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg">
+          <i class="fas fa-play-circle"></i>
+          <span data-en="How It Works" data-hi="यह कैसे काम करता है">How It Works</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-en="Schemes" data-hi="योजनाएं">Schemes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="36">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-en="States & UTs" data-hi="राज्य और केंद्र शासित">States & UTs</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="10">0</span><span class="stat-plus">L+</span>
+          <span class="stat-label" data-en="Beneficiaries" data-hi="लाभार्थी">Beneficiaries</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title" data-en="How It Works" data-hi="यह कैसे काम करता है">How It Works</h2>
+      <p class="section-subtitle" data-en="Three simple steps to find the right schemes for you" data-hi="आपके लिए सही योजनाएं खोजने के तीन सरल कदम">Three simple steps to find the right schemes for you</p>
+      <div class="steps-grid">
+        <div class="step-card" data-aos="fade-up">
+          <div class="step-number">1</div>
+          <div class="step-icon"><i class="fas fa-user-edit"></i></div>
+          <h3 data-en="Fill Your Details" data-hi="अपना विवरण भरें">Fill Your Details</h3>
+          <p data-en="Enter basic information like age, income, state, and occupation" data-hi="आयु, आय, राज्य और व्यवसाय जैसी बुनियादी जानकारी दर्ज करें">Enter basic information like age, income, state, and occupation</p>
+        </div>
+        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">2</div>
+          <div class="step-icon"><i class="fas fa-cogs"></i></div>
+          <h3 data-en="We Match Schemes" data-hi="हम योजनाएं मिलाते हैं">We Match Schemes</h3>
+          <p data-en="Our system finds the best matching government schemes for you" data-hi="हमारा सिस्टम आपके लिए सर्वोत्तम सरकारी योजनाएं खोजता है">Our system finds the best matching government schemes for you</p>
+        </div>
+        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-number">3</div>
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <h3 data-en="Apply Online" data-hi="ऑनलाइन आवेदन करें">Apply Online</h3>
+          <p data-en="Get direct links to apply for eligible schemes online" data-hi="पात्र योजनाओं के लिए ऑनलाइन आवेदन करने के लिए सीधे लिंक प्राप्त करें">Get direct links to apply for eligible schemes online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES SECTION ========== -->
+  <section class="categories-section">
+    <div class="container">
+      <h2 class="section-title" data-en="Browse by Category" data-hi="श्रेणी के अनुसार ब्राउज़ करें">Browse by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card" data-category="Agriculture">
+          <img src="https://mgx-backend-cdn.metadl.com/generate/images/751097/2026-03-24/1dc25d11-d400-4dac-9113-aaed53c3719e.png" alt="Agriculture" class="category-img">
+          <div class="category-overlay">
+            <i class="fas fa-seedling"></i>
+            <h3 data-en="Agriculture" data-hi="कृषि">Agriculture</h3>
+            <p data-en="Farming & Rural Development" data-hi="खेती और ग्रामीण विकास">Farming & Rural Development</p>
+          </div>
+        </div>
+        <div class="category-card" data-category="Education">
+          <img src="https://mgx-backend-cdn.metadl.com/generate/images/751097/2026-03-24/c9b0ae6b-af3a-4a1a-9c7a-c8dcbc9a8505.png" alt="Education" class="category-img">
+          <div class="category-overlay">
+            <i class="fas fa-graduation-cap"></i>
+            <h3 data-en="Education" data-hi="शिक्षा">Education</h3>
+            <p data-en="Scholarships & Learning" data-hi="छात्रवृत्ति और शिक्षा">Scholarships & Learning</p>
+          </div>
+        </div>
+        <div class="category-card" data-category="Women & Child">
+          <img src="https://mgx-backend-cdn.metadl.com/generate/images/751097/2026-03-24/b203ce7e-b1a3-4b3d-bac4-72c66a129183.png" alt="Women Empowerment" class="category-img">
+          <div class="category-overlay">
+            <i class="fas fa-female"></i>
+            <h3 data-en="Women & Child" data-hi="महिला और बाल">Women & Child</h3>
+            <p data-en="Empowerment & Welfare" data-hi="सशक्तिकरण और कल्याण">Empowerment & Welfare</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORM SECTION ========== -->
+  <section class="form-section" id="form-section">
+    <div class="container">
+      <h2 class="section-title" data-en="Find Your Schemes" data-hi="अपनी योजनाएं खोजें">Find Your Schemes</h2>
+      <p class="section-subtitle" data-en="Fill in your details below to discover eligible government schemes" data-hi="पात्र सरकारी योजनाओं की खोज के लिए नीचे अपना विवरण भरें">Fill in your details below to discover eligible government schemes</p>
+
+      <div class="form-card">
+        <!-- Progress Bar -->
+        <div class="form-progress">
+          <div class="progress-step active" data-step="1">
+            <div class="progress-circle">1</div>
+            <span data-en="Personal" data-hi="व्यक्तिगत">Personal</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="2">
+            <div class="progress-circle">2</div>
+            <span data-en="Financial" data-hi="वित्तीय">Financial</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="3">
+            <div class="progress-circle">3</div>
+            <span data-en="Results" data-hi="परिणाम">Results</span>
+          </div>
+        </div>
+
+        <form id="schemeForm">
+          <!-- Step 1: Personal Details -->
+          <div class="form-step active" id="step1">
+            <h3 class="form-step-title" data-en="Personal Details" data-hi="व्यक्तिगत विवरण">
+              <i class="fas fa-user"></i> Personal Details
+            </h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="age" data-en="Age" data-hi="आयु">Age</label>
+                <input type="number" id="age" min="0" max="120" placeholder="Enter your age" required>
+                <small class="form-hint" data-en="Enter age between 0-120" data-hi="0-120 के बीच आयु दर्ज करें">Enter age between 0-120</small>
+              </div>
+              <div class="form-group">
+                <label for="gender" data-en="Gender" data-hi="लिंग">Gender</label>
+                <select id="gender" required>
+                  <option value="" data-en="Select Gender" data-hi="लिंग चुनें">Select Gender</option>
+                  <option value="Male" data-en="Male" data-hi="पुरुष">Male</option>
+                  <option value="Female" data-en="Female" data-hi="महिला">Female</option>
+                  <option value="Other" data-en="Other" data-hi="अन्य">Other</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="state" data-en="State" data-hi="राज्य">State</label>
+                <select id="state" required>
+                  <option value="" data-en="Select State" data-hi="राज्य चुनें">Select State</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                  <option value="Ladakh">Ladakh</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Andaman & Nicobar">Andaman & Nicobar</option>
+                  <option value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary" onclick="nextStep(2)" data-en="Next" data-hi="अगला">
+                <span>Next</span> <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Financial Details -->
+          <div class="form-step" id="step2">
+            <h3 class="form-step-title" data-en="Financial & Occupation Details" data-hi="वित्तीय और व्यवसाय विवरण">
+              <i class="fas fa-briefcase"></i> Financial & Occupation Details
+            </h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="income" data-en="Annual Income Range" data-hi="वार्षिक आय सीमा">Annual Income Range</label>
+                <select id="income" required>
+                  <option value="" data-en="Select Income Range" data-hi="आय सीमा चुनें">Select Income Range</option>
+                  <option value="100000" data-en="Below ₹1 Lakh" data-hi="₹1 लाख से कम">Below ₹1 Lakh</option>
+                  <option value="250000" data-en="₹1 - ₹2.5 Lakh" data-hi="₹1 - ₹2.5 लाख">₹1 - ₹2.5 Lakh</option>
+                  <option value="500000" data-en="₹2.5 - ₹5 Lakh" data-hi="₹2.5 - ₹5 लाख">₹2.5 - ₹5 Lakh</option>
+                  <option value="800000" data-en="₹5 - ₹8 Lakh" data-hi="₹5 - ₹8 लाख">₹5 - ₹8 Lakh</option>
+                  <option value="1000000" data-en="Above ₹8 Lakh" data-hi="₹8 लाख से अधिक">Above ₹8 Lakh</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="category" data-en="Category" data-hi="श्रेणी">Category</label>
+                <select id="category" required>
+                  <option value="" data-en="Select Category" data-hi="श्रेणी चुनें">Select Category</option>
+                  <option value="General" data-en="General" data-hi="सामान्य">General</option>
+                  <option value="OBC" data-en="OBC" data-hi="ओबीसी">OBC</option>
+                  <option value="SC" data-en="SC" data-hi="अनुसूचित जाति">SC</option>
+                  <option value="ST" data-en="ST" data-hi="अनुसूचित जनजाति">ST</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="occupation" data-en="Occupation" data-hi="व्यवसाय">Occupation</label>
+                <select id="occupation" required>
+                  <option value="" data-en="Select Occupation" data-hi="व्यवसाय चुनें">Select Occupation</option>
+                  <option value="Student" data-en="Student" data-hi="छात्र">Student</option>
+                  <option value="Farmer" data-en="Farmer" data-hi="किसान">Farmer</option>
+                  <option value="Worker" data-en="Worker / Labourer" data-hi="श्रमिक / मजदूर">Worker / Labourer</option>
+                  <option value="Business" data-en="Business / Self-Employed" data-hi="व्यापार / स्वरोजगार">Business / Self-Employed</option>
+                  <option value="Homemaker" data-en="Homemaker" data-hi="गृहिणी">Homemaker</option>
+                  <option value="Unemployed" data-en="Unemployed" data-hi="बेरोजगार">Unemployed</option>
+                  <option value="Senior Citizen" data-en="Senior Citizen" data-hi="वरिष्ठ नागरिक">Senior Citizen</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline" onclick="prevStep(1)" data-en="Back" data-hi="वापस">
+                <i class="fas fa-arrow-left"></i> <span>Back</span>
+              </button>
+              <button type="button" class="btn btn-primary" onclick="findSchemes()" data-en="Find Schemes" data-hi="योजनाएं खोजें">
+                <i class="fas fa-search"></i> <span>Find Schemes</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESULTS SECTION ========== -->
+  <section class="results-section" id="results-section" style="display:none;">
+    <div class="container">
+      <div class="results-header">
+        <h2 class="section-title" data-en="Your Matching Schemes" data-hi="आपकी मिलान योजनाएं">Your Matching Schemes</h2>
+        <div class="results-count">
+          <span id="resultsCount">0</span>
+          <span data-en="schemes found" data-hi="योजनाएं मिलीं">schemes found</span>
+        </div>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div class="search-filter-bar">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search schemes..." data-en-placeholder="Search schemes..." data-hi-placeholder="योजनाएं खोजें...">
+        </div>
+        <div class="filter-tags" id="filterTags">
+          <button class="filter-tag active" data-filter="all" data-en="All" data-hi="सभी">All</button>
+          <button class="filter-tag" data-filter="Agriculture" data-en="Agriculture" data-hi="कृषि">Agriculture</button>
+          <button class="filter-tag" data-filter="Education" data-en="Education" data-hi="शिक्षा">Education</button>
+          <button class="filter-tag" data-filter="Health" data-en="Health" data-hi="स्वास्थ्य">Health</button>
+          <button class="filter-tag" data-filter="Finance" data-en="Finance" data-hi="वित्त">Finance</button>
+          <button class="filter-tag" data-filter="Business" data-en="Business" data-hi="व्यापार">Business</button>
+          <button class="filter-tag" data-filter="Women & Child" data-en="Women & Child" data-hi="महिला और बाल">Women & Child</button>
+          <button class="filter-tag" data-filter="Employment" data-en="Employment" data-hi="रोजगार">Employment</button>
+          <button class="filter-tag" data-filter="Housing" data-en="Housing" data-hi="आवास">Housing</button>
+        </div>
+      </div>
+
+      <!-- Results Grid -->
+      <div class="results-grid" id="resultsGrid">
+        <!-- Scheme cards will be injected here -->
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults" style="display:none;">
+        <i class="fas fa-search"></i>
+        <h3 data-en="No schemes found" data-hi="कोई योजना नहीं मिली">No schemes found</h3>
+        <p data-en="Try adjusting your filters or search criteria" data-hi="अपने फ़िल्टर या खोज मानदंड समायोजित करने का प्रयास करें">Try adjusting your filters or search criteria</p>
+      </div>
+
+      <div class="results-actions">
+        <button class="btn btn-outline" onclick="resetForm()" data-en="Search Again" data-hi="फिर से खोजें">
+          <i class="fas fa-redo"></i> <span>Search Again</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section class="faq-section" id="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-en="Frequently Asked Questions" data-hi="अक्सर पूछे जाने वाले प्रश्न">Frequently Asked Questions</h2>
+      <p class="section-subtitle" data-en="Get answers to common questions about government schemes" data-hi="सरकारी योजनाओं के बारे में सामान्य प्रश्नों के उत्तर प्राप्त करें">Get answers to common questions about government schemes</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" data-en="What is SchemeFinder India?" data-hi="SchemeFinder India क्या है?">
+            <span>What is SchemeFinder India?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="SchemeFinder India is a free tool that helps Indian citizens discover government schemes they are eligible for, based on their personal details like age, income, occupation, and category." data-hi="SchemeFinder India एक मुफ्त उपकरण है जो भारतीय नागरिकों को उनकी आयु, आय, व्यवसाय और श्रेणी जैसे व्यक्तिगत विवरणों के आधार पर पात्र सरकारी योजनाओं की खोज में मदद करता है।">
+            <p>SchemeFinder India is a free tool that helps Indian citizens discover government schemes they are eligible for, based on their personal details like age, income, occupation, and category.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-en="Is this an official government website?" data-hi="क्या यह एक आधिकारिक सरकारी वेबसाइट है?">
+            <span>Is this an official government website?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="No, SchemeFinder India is an independent informational tool. For official information, please visit the respective government department websites or myscheme.gov.in." data-hi="नहीं, SchemeFinder India एक स्वतंत्र सूचनात्मक उपकरण है। आधिकारिक जानकारी के लिए, कृपया संबंधित सरकारी विभाग की वेबसाइटों या myscheme.gov.in पर जाएं।">
+            <p>No, SchemeFinder India is an independent informational tool. For official information, please visit the respective government department websites or myscheme.gov.in.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-en="How do I apply for a scheme?" data-hi="मैं किसी योजना के लिए कैसे आवेदन करूं?">
+            <span>How do I apply for a scheme?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="Each scheme card has an 'Apply Now' button that will redirect you to the official application portal. You can also visit your nearest Common Service Center (CSC) for assistance." data-hi="प्रत्येक योजना कार्ड में 'अभी आवेदन करें' बटन है जो आपको आधिकारिक आवेदन पोर्टल पर रीडायरेक्ट करेगा। आप सहायता के लिए अपने निकटतम सामान्य सेवा केंद्र (CSC) भी जा सकते हैं।">
+            <p>Each scheme card has an 'Apply Now' button that will redirect you to the official application portal. You can also visit your nearest Common Service Center (CSC) for assistance.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-en="Is my personal data safe?" data-hi="क्या मेरा व्यक्तिगत डेटा सुरक्षित है?">
+            <span>Is my personal data safe?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="Yes! We do not store any of your personal information. All the matching is done locally in your browser, and no data is sent to any server." data-hi="हां! हम आपकी कोई भी व्यक्तिगत जानकारी संग्रहीत नहीं करते हैं। सभी मिलान आपके ब्राउज़र में स्थानीय रूप से किया जाता है, और कोई डेटा किसी सर्वर पर नहीं भेजा जाता है।">
+            <p>Yes! We do not store any of your personal information. All the matching is done locally in your browser, and no data is sent to any server.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-en="Can I use this on my mobile phone?" data-hi="क्या मैं इसे अपने मोबाइल फोन पर उपयोग कर सकता हूं?">
+            <span>Can I use this on my mobile phone?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="Yes! SchemeFinder India is fully responsive and works perfectly on mobile phones, tablets, and desktop computers." data-hi="हां! SchemeFinder India पूरी तरह से रिस्पॉन्सिव है और मोबाइल फोन, टैबलेट और डेस्कटॉप कंप्यूटर पर पूरी तरह से काम करता है।">
+            <p>Yes! SchemeFinder India is fully responsive and works perfectly on mobile phones, tablets, and desktop computers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-en="What documents do I need to apply?" data-hi="आवेदन करने के लिए मुझे किन दस्तावेजों की आवश्यकता है?">
+            <span>What documents do I need to apply?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-en="Common documents include Aadhaar Card, PAN Card, Income Certificate, Caste Certificate, Bank Passbook, and Passport-size photos. Specific requirements vary by scheme." data-hi="सामान्य दस्तावेजों में आधार कार्ड, पैन कार्ड, आय प्रमाण पत्र, जाति प्रमाण पत्र, बैंक पासबुक और पासपोर्ट आकार की फोटो शामिल हैं। विशिष्ट आवश्यकताएं योजना के अनुसार भिन्न होती हैं।">
+            <p>Common documents include Aadhaar Card, PAN Card, Income Certificate, Caste Certificate, Bank Passbook, and Passport-size photos. Specific requirements vary by scheme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-tricolor">
+      <div class="tricolor-saffron"></div>
+      <div class="tricolor-white"></div>
+      <div class="tricolor-green"></div>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fas fa-landmark"></i>
+            <span>SchemeFinder India</span>
+          </div>
+          <p data-en="Helping every Indian citizen find the right government schemes. Simple, fast, and free." data-hi="हर भारतीय नागरिक को सही सरकारी योजनाएं खोजने में मदद करना। सरल, तेज़ और मुफ़्त।">Helping every Indian citizen find the right government schemes. Simple, fast, and free.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+            <li><a href="#form-section" data-en="Find Schemes" data-hi="योजनाएं खोजें">Find Schemes</a></li>
+            <li><a href="#faq-section" data-en="FAQ" data-hi="सामान्य प्रश्न">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Official Resources" data-hi="आधिकारिक संसाधन">Official Resources</h4>
+          <ul>
+            <li><a href="https://www.myscheme.gov.in" target="_blank">MyScheme.gov.in</a></li>
+            <li><a href="https://www.india.gov.in" target="_blank">India.gov.in</a></li>
+            <li><a href="https://scholarships.gov.in" target="_blank">National Scholarship Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="© 2026 SchemeFinder India. For informational purposes only." data-hi="© 2026 SchemeFinder India. केवल सूचनात्मक उद्देश्यों के लिए।">© 2026 SchemeFinder India. For informational purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CHATBOT ========== -->
+  <div class="chatbot-container" id="chatbot">
+    <button class="chatbot-toggle" id="chatbotToggle">
+      <i class="fas fa-robot"></i>
+      <span class="chatbot-badge" data-en="Help" data-hi="मदद">Help</span>
+    </button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <i class="fas fa-robot"></i>
+          <div>
+            <h4 data-en="SchemeBot" data-hi="स्कीमबॉट">SchemeBot</h4>
+            <span data-en="Your guide to government schemes" data-hi="सरकारी योजनाओं के लिए आपका मार्गदर्शक">Your guide to government schemes</span>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-message bot">
+          <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+          <div class="chat-bubble">
+            <p data-en="Namaste! 🙏 I'm SchemeBot. I can help you find the right government schemes. Choose an option below or type your question!" data-hi="नमस्ते! 🙏 मैं स्कीमबॉट हूं। मैं आपको सही सरकारी योजनाएं खोजने में मदद कर सकता हूं। नीचे एक विकल्प चुनें या अपना प्रश्न टाइप करें!">
+              Namaste! 🙏 I'm SchemeBot. I can help you find the right government schemes. Choose an option below or type your question!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-quick-replies" id="quickReplies">
+        <button class="quick-reply" data-query="farmer" data-en="🌾 Farmer Schemes" data-hi="🌾 किसान योजनाएं">🌾 Farmer Schemes</button>
+        <button class="quick-reply" data-query="student" data-en="🎓 Student Schemes" data-hi="🎓 छात्र योजनाएं">🎓 Student Schemes</button>
+        <button class="quick-reply" data-query="women" data-en="👩 Women Schemes" data-hi="👩 महिला योजनाएं">👩 Women Schemes</button>
+        <button class="quick-reply" data-query="health" data-en="🏥 Health Schemes" data-hi="🏥 स्वास्थ्य योजनाएं">🏥 Health Schemes</button>
+        <button class="quick-reply" data-query="housing" data-en="🏠 Housing Schemes" data-hi="🏠 आवास योजनाएं">🏠 Housing Schemes</button>
+        <button class="quick-reply" data-query="business" data-en="💼 Business Loans" data-hi="💼 व्यापार ऋण">💼 Business Loans</button>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="chatInput" placeholder="Type your question..." data-en-placeholder="Type your question..." data-hi-placeholder="अपना प्रश्न टाइप करें...">
+        <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script type="module" src="./schemes-data.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
